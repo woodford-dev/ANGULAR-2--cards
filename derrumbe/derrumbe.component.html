@@ -1,0 +1,6 @@
+<div class="header no-gutter" (click)="toggle( $event )">
+	<ng-content select="[header]"></ng-content>
+</div>
+<div class="derrumbe-block" [ngClass]="{hide: !derrumbeOpened}">
+	<ng-content select="[body]"></ng-content>
+</div>		

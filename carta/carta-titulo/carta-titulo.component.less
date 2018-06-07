@@ -1,0 +1,66 @@
+@import "./../../../styles.less";
+
+.icon-style{
+	border-radius: 50%;
+	height:35px;
+	width:35px;
+	font-size: 16px;
+	line-height: 35px;
+	text-align:center;
+	float: left;
+	margin: 0 25px 0 0;
+	color:white;
+		@media(min-width:@screen-sm-min){
+			height:40px;
+			width:40px;
+			font-size: 18px;
+			line-height: 40px;
+			margin-right: 25px;
+	}
+		@media(min-width:@screen-md-min){
+			height:50px;
+			width:50px;
+			font-size: 22px;
+			line-height: 50px;
+	}
+		@media(min-width:@screen-lg-min){
+			height:60px;
+			width:60px;
+			font-size: 30px;
+			line-height: 30px;
+	}
+}
+
+.exclamation-triangle{
+	background-color:#e8112d;
+}
+.truck{
+	background-color:#7fba00;
+}
+.eye{
+	background-color:#f99b0c;
+}
+.gift{
+    background-color:@brand-primary;
+    z-index:20;
+}
+:host .title-style{
+	padding:20px;
+}
+h2.carta-title-text {
+	font-size: 20px;
+	font-family:  @font-family-soho-gothic-medium;
+	padding-left:0;
+	margin-top: 7px;
+	@media (min-width: @screen-sm-min) {
+        font-size: 18px;
+        padding-left: 2px;
+        font-weight: 400;
+    }
+    @media (min-width: @screen-md-min) {
+        font-size: 22px;
+        padding-left: 2px;
+        font-weight: 400;
+    }
+
+}

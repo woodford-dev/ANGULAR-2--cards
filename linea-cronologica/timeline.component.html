@@ -1,0 +1,13 @@
+<span class="timeline-text {{gap}}">{{title}}
+<span class="timeline-sub-text">{{date}}</span>
+</span>
+
+<span class="ss-icon-bg ss-icon-style {{ icon }} {{gap}} hidden-xs">
+	<i class="fa fa-{{ icon }} hidden-xs"></i>
+</span>
+<span class="{{line}}"></span>
+
+<!--Line break "Icon"-->
+<div *ngIf="iconBreak">
+	<span class="break-icon today-red hidden-xs {{iconBreak}}"></span>
+</div>

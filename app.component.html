@@ -1,0 +1,5 @@
+<my-cuenta-menu (isMenuClosed)="isMenuClosed($event)"></my-cuenta-menu>
+
+<div [hidden]="menuOpen" (window:resize)="onResize($event)">
+	<mi-cuenta></my-cuenta>
+</div>

@@ -1,0 +1,37 @@
+<nav class="collapse-content-menu navbar-default">
+	<ss-collapse-content-menu (collapseContentMenuisOpened)="collapseContentMenuisOpened($event)">
+	<!--MENU HEADER-->
+		<div header>
+			<div class="container">
+			<!--MENU TITLE-->
+				<div class="hidden-xs col-sm-8 col-md-12 col-lg-12 greetings-container">
+					<ss-menu-title menuTitle="menu-title" menuUsername="menu-username"></ss-menu-title>
+				</div>
+			<!--MENU LINKS-->
+				<div class="col-xs-12 col-sm-4 col-md-12 col-lg-12 links-container">
+					<ss-menu-links  class="hidden-xs hidden-sm" collapse="navbar-nav"></ss-menu-links>
+					<h3 class=" links-title hidden-md hidden-lg">
+						My Specsavers
+						<i id="menu-chevron" class="fa" [ngClass]="{'fa-chevron-up' : myAccountMenuHasBeenOpened, 'fa-chevron-down': !myAccountMenuHasBeenOpened}">
+						</i>
+					</h3>
+				</div>
+			</div><!--container-->
+		</div><!--header-->
+	<!--MENU DROP DOWN-->
+		<div body>
+			<div class="col-xs-12 col-sm-5 col-md-12 col-lg-12 no-gutter tablet-float-container">
+				<div class="body-drop-down container-mobile">
+				<!--MENU TITLE MOBILE-->
+					<div class="col-xs-12 hidden-sm greetings-container">
+						<ss-menu-title menuTitle="menu-title-mobile" menuUsername="menu-username-mobile"></ss-menu-title>
+					</div>
+				<!--MENU LINKS MOBILE-->
+					<div class="col-xs-12 col-sm-12">
+						<ss-menu-links collapse="drop-nav"></ss-menu-links>
+					</div>
+				</div>
+			</div>
+		</div><!--body-->
+	</ss-collapse-content-menu>
+</nav>

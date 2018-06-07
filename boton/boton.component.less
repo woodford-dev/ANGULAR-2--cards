@@ -1,0 +1,79 @@
+@import "./../../styles.less";
+
+@button-primary-color: rgb(180, 93, 169);
+
+.boton{
+	font-family: @font-family-soho-gothic-bold;
+	font-size: 18px;
+	text-align: center;
+	color: white;
+	line-height: 17px;
+	border:none;
+
+	cursor: pointer;
+	height: 64px;
+	width: 90%;
+	text-decoration:none;
+	background:@button-primary-color;
+	margin-bottom: 30px;
+	transition: all .1s ease-in-out;
+
+	@media (min-width: @screen-sm-min) {
+    	font-size: 18px;
+    	height: 64px;
+        width: 428px;
+    }
+    @media (min-width: @screen-md-min) {
+		font-size: 16px;
+		height: 72px;
+		width: 260px;
+    }
+    @media (min-width: @screen-lg-min) {
+        font-size: 16px;
+        height: 72px;
+        width: 280px;
+    }
+}
+
+.over {
+  background-color: darken(@brand-primary, 10%);
+  color: white;
+  @media (min-width: @screen-xs-min) {
+        font-size: 17px;
+    }
+    @media (min-width: @screen-sm-min) {
+        font-size: 21px;
+    }
+    @media (min-width: @screen-md-min) {
+        font-size: 20px;
+    }
+}
+
+.disabled{
+	cursor:default;
+	background-color: #CCC;
+	color:white;
+	border: none;
+}
+
+.white{
+	background: white;
+	color:@brand-success;
+	&:hover{
+		border-color: black;
+		color: black;
+		font-size: 24px;
+	}
+
+}
+.white-sm{
+	.white;
+	@media(min-width:@screen-md-min){
+		border:none;
+		&:hover{
+			text-decoration: underline;
+			font-size: 18px;
+			color: @brand-success;
+		}
+	}
+}

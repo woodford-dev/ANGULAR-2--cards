@@ -1,0 +1,9 @@
+<ul class="nav my-account-nav {{collapse}}" *ngFor="let anchor of links">
+	<li>
+		<a href="{{anchor.href}}" class="active">
+			{{anchor.link}}
+			<span class="badge badge-non-display">2</span>
+		</a>
+		<i class="fa fa-chevron-right menu-chevron hidden-md hidden-lg"></i>
+	</li>	
+</ul>
